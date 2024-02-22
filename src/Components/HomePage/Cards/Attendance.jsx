@@ -7,7 +7,7 @@ const HomePage = () => {
   const [buttonStates, setButtonStates] = useState([]);
   const [workDoneValues, setWorkDoneValues] = useState([]);
   const [userData] = useState([
-    { joined_date: "12-12-1212", id: 22, regno: "123ABC", project: "Project X" },
+    { joined_date: "12-12-1212", id: 22, regno: "123ABC", project: "Project XYZ" },
     // Add more mock data if needed
   ]);
 
