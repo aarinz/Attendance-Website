@@ -1,0 +1,90 @@
+{
+    "routes": [
+      {
+        "path": "/login",
+        "element": {
+          "type": "Suspense",
+          "props": {
+            "fallback": {
+              "type": "div",
+              "props": {
+                "children": "Loading..."
+              }
+            }
+          },
+          "children": {
+            "type": "LoginSignup"
+          }
+        }
+      },
+      {
+        "path": "/home",
+        "element": {
+          "type": "Suspense",
+          "props": {
+            "fallback": {
+              "type": "div",
+              "props": {
+                "children": "Loading..."
+              }
+            }
+          },
+          "children": {
+            "type": "HomePage"
+          }
+        }
+      },
+      {
+        "path": "/attendance",
+        "element": {
+          "type": "Suspense",
+          "props": {
+            "fallback": {
+              "type": "div",
+              "props": {
+                "children": "Loading..."
+              }
+            }
+          },
+          "children": {
+            "type": "Attendance"
+          }
+        }
+      },
+      {
+        "path": "/projects",
+        "element": {
+          "type": "Suspense",
+          "props": {
+            "fallback": {
+              "type": "div",
+              "props": {
+                "children": "Loading..."
+              }
+            }
+          },
+          "children": {
+            "type": "Projects"
+          }
+        }
+      },
+      {
+        "path": "/members",
+        "element": {
+          "type": "Suspense",
+          "props": {
+            "fallback": {
+              "type": "div",
+              "props": {
+                "children": "Loading..."
+              }
+            }
+          },
+          "children": {
+            "type": "Members"
+          }
+        }
+      }
+    ]
+  }
+  

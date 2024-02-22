@@ -1,0 +1,220 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: black; 
+}
+
+.top-navbar {
+    background-color: #3d3d3d5d;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width:1510px;
+  }
+  
+  .hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: margin-left 0.5s ease;
+    color: azure;
+  }
+
+  .hamburger:hover {
+    color: #df5c28;
+  }
+  
+
+  .brand {
+    font-size: 1.5rem;
+    color: azure;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color:  #3d3d3d5d;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: margin-left 0.5s ease;
+  }
+  
+
+  .user-icon {
+    font-size: 5rem;
+    
+    margin-bottom: 10px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .logout {
+    cursor: pointer;
+    margin-right: 38px;
+    margin-top: 10px;
+  }
+
+  .name{
+    margin-right: 40px;
+    font-size: 3;
+  }
+  
+  .content {
+    margin: 30px;
+    transition: margin-left 0.5s ease;
+    color: azure;
+    margin-left: 0;
+    padding: 20px;
+    
+  }
+  
+  .hamburger.sidebar-visible {
+    margin-left: 250px;
+  }
+  
+  .content.content-sidebar-visible {
+    margin-left: 250px;
+    transition: none;
+  }
+  
+  .content-header {
+    background-color: #3d3d3d5d;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: azure;
+    border-radius: 35px;
+  }
+  
+  #welcome {
+    font-size: 2rem; 
+    margin-bottom: 10px; 
+    color: #df5c28;
+  }
+  
+  #updates {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard {
+    display: flex;
+    justify-content: flex-end;
+    gap: 160px;
+  }
+  
+  .stat-item {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-right: 4%;
+  }
+
+  .card-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    margin-top: 20px;
+    width:100%;
+  }
+  
+ 
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card:hover {
+    transform: translateY(-5px); 
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover .icon {
+    color: white;
+    transform: translateY(-4px);
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .card {
+    width: 22rem;
+    background: #3d3d3d5d;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+  }
+  
+  .card {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      
+    }
+    to {
+      opacity: 1;
+      
+    }
+  }
+
+  
+  .icon {
+    margin-left: 60px;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #d9521d;
+    transition: color 0.3s ease; 
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #d9521d;
+    text-align: center;
+  }
+  
+ 
+@media only screen and (max-width: 1226px) {
+  .sidebar {
+    width: 100%;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .hamburger.sidebar-visible {
+    margin-left: 0;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .dashboard {
+    justify-content: center;
+  }
+
+  .stat-item {
+    margin-right: 2%;
+  }
+}
+
+
+  

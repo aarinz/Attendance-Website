@@ -1,0 +1,228 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .top-navbar {
+    background-color: #3d3d3d5d;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 1516px;
+  }
+  
+  .hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: margin-left 0.3s ease;
+    color: azure;
+  }
+  
+  .hamburger:hover {
+    color: #df5c28;
+  }
+  
+  .brand {
+    font-size: 1.5rem;
+    color: azure;
+  }
+  
+  .sidebar {
+    width: 199px;
+    background-color: #3d3d3d5d;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .user-icon {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .logout {
+    cursor: pointer;
+    margin-right: 38px;
+    margin-top: 10px;
+  }
+
+  .hamburger.sidebar-visible {
+    margin-left: 250px;
+  }
+  
+  .content.content-sidebar-visible {
+    margin-left: 250px;
+    transition: none;
+  }
+
+  .form-container {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: calc(40% - 20px);
+    transition: right 0.3s ease-in-out;
+    z-index: 1; 
+  }
+  
+  .form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form input {
+    width: 35%;
+    padding: 2px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form button {
+    background-color: #df5c28;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+.project-container {
+  text-align: left;
+}
+
+.add-project-button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #df5c28;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  left: 0;
+  z-index: 0; /* Ensure button is below form */
+}
+
+.add-project-button {
+  position: relative;
+  left: 0; 
+}
+
+.add-project-button.button-sidebar-visible {
+  left: 250px; 
+}
+
+
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+  
+}
+
+
+.form {
+  background-color: #3d3d3d5d;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  width: 92%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.form-container.form-sidebar-visible {
+  margin-right: 250px;
+  right: 0;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  position: relative;
+  background-color: #3d3d3d5d;
+  color: #df5c28;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(27% - 8px);
+  word-wrap: break-word;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  color: white;
+}
+
+.project-card h3,
+.project-card p,
+.project-card label {
+  color: #df5c28;
+}
+
+.project-card input[type="text"] {
+  color: white;
+}
+
+.remove-button {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #df5c28;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 17%;
+  border-radius: 30px;
+}
+
+.project-card:hover .remove-button {
+  display: block;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,115 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .top-navbar {
+    background-color: #3d3d3d5d;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 1516px;
+  }
+  
+  .hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: margin-left 0.3s ease;
+    color: azure;
+  }
+  
+  .hamburger:hover {
+    color: #df5c28;
+  }
+  
+  .brand {
+    font-size: 1.5rem;
+    color: azure;
+  }
+  
+  .sidebar {
+    width: 199px;
+    background-color: #3d3d3d5d;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .user-icon {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .logout {
+    cursor: pointer;
+    margin-right: 38px;
+    margin-top: 10px;
+  }
+
+  .hamburger.sidebar-visible {
+    margin-left: 250px;
+  }
+  
+  .content.content-sidebar-visible {
+    margin-left: 250px;
+    transition: none;
+  }
+
+  .form {
+    background-color: #3d3d3d5d;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0; /* Start with opacity 0 */
+    animation: fadeIn 1s ease-in-out forwards; /* Animation to fade in and stay visible */
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form input {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .form button {
+    background-color: #df5c28;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }

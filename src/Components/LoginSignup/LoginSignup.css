@@ -1,0 +1,109 @@
+.container {
+    margin: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 550px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+    border-color: #d9521d;
+    box-shadow: 0px 0px 20px 5px #d9521d94;
+    
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .text {
+    color: #d9521d;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  .underline {
+    width: 61px;
+    height: 5px;
+    background: #d9521d;
+    border-radius: 9px;
+  }
+  
+  .inputs {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .input {
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    width: 400px;
+    height: 40px;
+    background: #eaeaea;
+    border-radius: 6px;
+    padding-left: 10px;
+  }
+  
+  .input img {
+    margin-right: 0px; 
+    margin-left: 107px;
+  }
+  
+  .input input {
+    margin-left:13px;
+    height: 50px; 
+    width: 54%;
+    border: none;
+    outline: none;
+    color: #575656;
+    font-size: 19px;
+  }
+ 
+  .submit-container{
+    display:flex;
+    gap: 25px;
+    margin:60px auto;
+  }
+
+  .submit{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 55px;
+    color: #fff;
+    background: #d9521d;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+  .submit:hover {
+    background: #fff;
+    color: #d9521d;
+  }
+
+  body {
+    margin: 0; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    background:#111111;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  

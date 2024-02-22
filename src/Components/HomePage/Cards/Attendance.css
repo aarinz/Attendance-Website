@@ -1,0 +1,187 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: black;
+}
+
+.top-navbar {
+  background-color: #3d3d3d5d;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 1516px;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: margin-left 0.3s ease;
+  color: azure;
+}
+
+.hamburger:hover {
+  color: #df5c28;
+}
+
+.brand {
+  font-size: 1.5rem;
+  color: azure;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #3d3d3d5d;
+  height: 100vh;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: margin-left 0.3s ease;
+}
+
+.user-icon {
+  font-size: 5rem;
+  margin-bottom: 10px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.logout {
+  cursor: pointer;
+  margin-right: 38px;
+  margin-top: 10px;
+}
+
+.name {
+  margin-right: 40px;
+  font-size: 3;
+}
+
+.content {
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+  color: azure;
+  margin-left: 0;
+}
+
+.hamburger.sidebar-visible {
+  margin-left: 250px;
+}
+
+.content.content-sidebar-visible {
+  margin-left: 250px;
+  transition: none;
+}
+
+.content-header {
+  background-color: #3d3d3d5d;
+  padding: 20px;
+  margin-bottom: 25px;
+  margin-left: 84px;
+  color: azure;
+  border-radius: 25px;
+  width: 85.5%;
+  align-items: center;
+}
+
+#welcome {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #df5c28;
+}
+
+#updates {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.attendance-chart-container {
+  width: 85%;
+  margin: auto;
+  background-color: #3d3d3d5d;
+  padding: 20px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.attendance-chart {
+  list-style: none;
+  padding: 0;
+}
+
+.attendance-heading{
+  display: grid;
+  grid-template-columns: 110px 100px 130px 290px 150px 150px;
+  align-items: center;
+  background-color: #3d3d3d5d;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+
+
+.attendance-row {
+  display: grid;
+  grid-template-columns: 110px 100px 130px 290px 150px 150px;
+  align-items: center;
+  background-color: #3d3d3d5d;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.attendance-button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.attendance-button.present {
+  background-color: green;
+  color: white;
+}
+
+.attendance-button.absent {
+  background-color: red;
+  color: white;
+}
+
+.attendance-button:hover {
+  background-color: #555;
+}
+
+.work-done-input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  max-width: 20px; 
+  text-align: center;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.attendance-chart-container {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
