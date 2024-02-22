@@ -70,7 +70,7 @@ const Members = () => {
             onChange={(e) => handleFormChange('name', e.target.value)}
           />
 
-          <label htmlFor="URK">URK:</label>
+          <label htmlFor="URK">Reg No:</label>
           <input
             type="text"
             id="URK"
@@ -86,7 +86,7 @@ const Members = () => {
             onChange={(e) => handleFormChange('permission', e.target.value)}
           />
 
-          <label htmlFor="kmail">Kmail:</label>
+          <label htmlFor="kmail">Email:</label>
           <input
             type="text"
             id="kmail"
