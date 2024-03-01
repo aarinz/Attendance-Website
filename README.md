@@ -1,4 +1,10 @@
 # Attendance-Website
+This web application is designed to streamline attendance tracking for organizations. Built using React.js, it offers a user-friendly interface for administrators to manage members, projects, and attendance records.
+
+To login
+Username: username
+password: 123
+
 ![image](https://github.com/aarinz/Attendance-Website/assets/92904394/0c41b261-d50a-49bc-876f-1b8edace8de6)
 ![image](https://github.com/aarinz/Attendance-Website/assets/92904394/a530160f-285a-42a3-bb5b-04ed2b3fa8da)
 ![image](https://github.com/aarinz/Attendance-Website/assets/92904394/0b1fbc51-ee0a-4f60-86cc-e87be72427ff)
