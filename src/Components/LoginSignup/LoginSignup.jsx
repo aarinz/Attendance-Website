@@ -3,6 +3,7 @@ import './LoginSignup.css';
 import user_icon from '../Assets/person.png';
 import password_icon from '../Assets/password.png';
 
+
 const LoginSignup = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -13,11 +14,11 @@ const LoginSignup = () => {
   };
 
   const handleLogin = () => {
-    if (username === 'your_username' && password === 'your_password') {
+    if (username === 'username' && password === '123') {
       console.log('Login successful');
       window.location.href = '/home';
     } else {
-      console.error('Login failed: Invalid credentials');
+      alert('Username/password is wrong');
     }
   };
 
